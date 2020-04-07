@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="{{ '/main.css' | relative_url }}"></link>
+
+<div id="input-area">
+    <input id="search-input" placeholder="请输入关键词">
+    <button id="search-button" onclick="onSearch()">搜索</button><br>
+    <h4>筛选条件</h4>
+    <ul>
+        <li>
+            <span>每本书的最低评价人数：</span><input id="minimum-raters-input" placeholder="1">
+        </li>
+    </ul>
+</div>
+<progress id="searching-progress" max="100" value="0" hidden></progress>
+<ol id="search-result-list"></ol>
+
+<script src="{{ '/main.js' | relative_url }}"></script>
+<script>
+    function onSearch() {
+        sortBooks(document.getElementById("search-input").value);
+    }
+</script>
