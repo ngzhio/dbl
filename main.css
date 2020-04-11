@@ -1,18 +1,32 @@
+#input-area {
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
 #input-area > #search-input {
     background: white;
-    width: 61.8%;
+    width: auto;
+    min-width: 60%;
+    max-width: 80%;
     height: 25px;
     font-size: 20px;
+    padding: 2px;
+    border-width: 1px;
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 5px;
 }
 
 #input-area > #search-button {
     background: white;
-    margin-top: 3px;
-    height: 25px;
+    width: auto;
+    height: 30px;
     font-size: 20px;
+    padding: 2px 5px 2px 5px;
+    border-width: 1px;
     border-radius: 5px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 progress#searching-progress {
